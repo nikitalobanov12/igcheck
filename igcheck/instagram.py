@@ -129,3 +129,15 @@ class InstagramClient:
         non_follower_ids = following_ids - follower_ids
 
         return [following[uid] for uid in non_follower_ids]
+
+    def unfollow_user(self, user_id: str) -> bool:
+        """
+        Unfollow a user by their user ID.
+
+        Args:
+            user_id: The Instagram user ID to unfollow
+
+        Returns:
+            True if successful, False otherwise
+        """
+        return self.client.user_unfollow(user_id)

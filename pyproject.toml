@@ -5,10 +5,11 @@ description = "CLI tool to find Instagram accounts you follow that don't follow 
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
-    "instagrapi>=2.0.0",
-    "click>=8.0.0",
-    "rich>=13.0.0",
-    "python-dotenv>=1.0.0",
+  "instagrapi>=2.0.0",
+  "click>=8.0.0",
+  "rich>=13.0.0",
+  "python-dotenv>=1.0.0",
+  "questionary>=2.0.0",
 ]
 
 [project.scripts]

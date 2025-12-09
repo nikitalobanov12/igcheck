@@ -47,6 +47,13 @@ igcheck --csv
 igcheck --csv --output my-results.csv
 ```
 
+### Interactive unfollow
+```bash
+igcheck --interactive
+igcheck -i
+```
+This shows a checkbox list where you can select accounts to unfollow. Use arrow keys to navigate, Space to select/deselect, and Enter to confirm.
+
 ### All options
 ```
 Usage: igcheck [OPTIONS]
@@ -59,6 +66,7 @@ Options:
   --json               Output results as JSON
   --csv                Output results as CSV
   -o, --output PATH    Output file path
+  -i, --interactive    Interactively select and unfollow accounts
   --help               Show this message and exit.
 ```
 
@@ -69,6 +77,7 @@ Options:
 - Progress indicators while fetching data
 - Multiple output formats (console, JSON, CSV)
 - Rich console output with formatted tables
+- Interactive unfollow with checkbox selection
 
 ## Security Notes
 

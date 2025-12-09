@@ -17,9 +17,10 @@ igcheck/
 
 ### Key Components
 
-- **InstagramClient** (`instagram.py:28`): Wrapper around instagrapi Client with session persistence and 2FA support
-- **UserInfo** (`instagram.py:18`): Dataclass representing an Instagram user (user_id, username, full_name, profile_url)
+- **InstagramClient** (`instagram.py:29`): Wrapper around instagrapi Client with session persistence and 2FA support
+- **UserInfo** (`instagram.py:19`): Dataclass representing an Instagram user (user_id, username, full_name, profile_url)
 - **Output functions** (`output.py`): `print_to_console()`, `export_to_json()`, `export_to_csv()`
+- **interactive_unfollow** (`cli.py:27`): Interactive checkbox UI for selecting and unfollowing accounts
 
 ### Data Flow
 
@@ -59,6 +60,7 @@ Manual testing only for now (requires real Instagram credentials).
 - `click` - CLI framework
 - `rich` - Console formatting
 - `python-dotenv` - Environment variable loading
+- `questionary` - Interactive checkbox selection
 
 ## Known Limitations
 
