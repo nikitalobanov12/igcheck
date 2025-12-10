@@ -35,6 +35,10 @@ ENV/
 # Environment variables
 .env
 
+AGENTS.md
+
+
+
 # Session data (contains auth tokens - sensitive!)
 session.json
 
